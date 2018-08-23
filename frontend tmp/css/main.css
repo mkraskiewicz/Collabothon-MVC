@@ -31,9 +31,12 @@ body{
 }
 .aboutSectionBG{
     background-color: #EFF2F7;
-    height: 600px;
+    height: 670px;
 }
-
+.aboutSectionBGCustomerProvider{
+    background-color: #EFF2F7;
+    height: 515px;
+}
 .mainPhotoContainer img{
     max-height: 100%;
     max-width: 100%;
@@ -97,4 +100,68 @@ body{
 .collapsible-body{
      color: #47525E;
 }
+#editButton{
+   width: 130px;
+   height: 130px;
+   margin:40px;
+}
+.addButtonFont{
+font-size: 80px !important;
+}
 
+#editButton.btn-large i {
+    line-height: 125px;
+}
+.modal { width: 25% !important ; height: 25% !important ; }
+.moda2 { width: 25% !important ; height: 15% !important ; }
+
+.modalTitle{
+    color: #47525E;
+    font-size: 55px;
+}
+.modalContent{
+    margin-top: 40px;
+     color: #47525E;
+     font-size: 45px;
+}
+
+#closeModal{
+   width: 150px;
+   margin-top: 60px;
+   height: 150px;
+   margin-left:80px;
+   margin-right: 270px;
+   float: left;
+}
+#callCustommer{
+   width: 150px;
+   height: 150px;
+   margin-top: 60px;
+   margin-left:60px; 
+   margin-right: 60px;
+   clear: both;
+}
+#callCustommer.btn-large i {
+    line-height: 150px;
+    font-size: 55px;
+}
+#closeModal.btn-large i {
+    line-height: 150px;
+    font-size: 55px;
+}
+.phoneicons{
+    font-size: 55px;
+}
+.buttonsSectionServiceProvider{
+       margin-top: -155px;
+}
+.hideScreen { display: none; }
+.showScreen { display: block; }
+
+#phoneCallView {
+   display: none;
+}
+.dummyCall{
+     height: 450px;
+     background-color: yellow;
+}

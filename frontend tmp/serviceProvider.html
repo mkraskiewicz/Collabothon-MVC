@@ -17,26 +17,39 @@
 <body>
     <div class="container">
         <div class="row ">
+
             <button class="btn waves-effect waves-light" onclick="load('http://localhost:8080//api/v1/vendors/1')" name="action">Submit
                 <i class="material-icons right">send</i>
             </button>
-            <div class="col l6 m6 s6 offset-l3 offset-m3  offset-s3 phoneScreenDimention" id="phoneScreen">
+
+            <div class="col l6 m6 s6 offset-l1 offset-m1  offset-s1 phoneScreenDimention" id="phoneScreen">
+
                 <!--MODAL-->
+
                 <div id="modal1" class="modal">
                     <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
+                        <div class="modalTitle">
+                            <b>Andrzej Wrzosek</b> choose you!
+                        </div>
+                        <div class="modalContent">
+                            He needs a <b>mortgage</b></br>
+                            </br>
+                            <b>Call</b> him?
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+
+                    <div class="phoneCallBar">
+                        <div><a id="closeModal" class="btn-floating btn-large waves-effect modal-close waves-light red"  ><i class=" phoneicons material-icons">close</i></a></div>
+                        <div><a id="callCustommer" class="btn-floating btn-large waves-effect  modal-close waves-light green"><i class=" phoneicons material-icons">local_phone</i></a></div>
                     </div>
                 </div>
+
                 <!--!MODAL-->
 
                 <div class="mainPhotoContainer center-align ">
                     <img class="responsive-img" src="images/bman.jpg" alt="Italian Trulli">
                 </div>
-                <div class="row aboutSectionBG">
+                <div class="row aboutSectionBGCustomerProvider">
                     <div class="aboutSection">
                         <div class="lineSection">
                             <div class="valign-wrapper">
@@ -57,11 +70,12 @@
                             I am an banking advisor specialized in financial trading areas with 7 years of experience. I always stars working right away,
                             to provide the best customer experience
                         </div>
-                        <div class="right-align"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        <div class="right-align"><a id="editButton" class=" btn-floating btn-large waves-effect waves-light grey"><i class=" addButtonFont material-icons">mode_edit</i></a>
                         </div>
                     </div>
 
                 </div>
+                <!--dummy button-->
                 <button data-target="modal1" class="btn modal-trigger">Modal</button>
 
                 <div class="androidBar">

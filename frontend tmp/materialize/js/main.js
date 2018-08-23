@@ -1,3 +1,4 @@
+
 function load(url) {
     $.ajax({
         type: "GET",
@@ -13,4 +14,23 @@ function load(url) {
     })
 }
 
+
+
 M.AutoInit();
+
+function answerCall(){
+    console.log("call answered");
+    document.getElementById('swippingView').className = 'hideScreen';
+    var a = document.getElementById('phoneCallView');
+    a.style.display = 'block';
+    console.log(a);
+    
+}
+
+function onCloseCall(elem){
+    var a = document.getElementById('modal1');
+  
+
+
+}
+
