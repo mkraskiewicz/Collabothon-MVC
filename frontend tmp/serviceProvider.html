@@ -2,19 +2,24 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="materialize/js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row ">
+            <button class="btn waves-effect waves-light" onclick="load('http://localhost:8080//api/v1/vendors/1')" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
             <div class="col l6 m6 s6 offset-l3 offset-m3  offset-s3 phoneScreenDimention" id="phoneScreen">
                 <!--MODAL-->
                 <div id="modal1" class="modal">
@@ -72,10 +77,7 @@
     </div>
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="materialize/js/main.js"></script>
-    <script type="text/javascript" src="materialize/js/jquery-3.2.1.min.js"></script>
-
 </body>
 
 </html>
