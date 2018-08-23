@@ -30,10 +30,10 @@ public class SwaggerConfig {
 
     private ApiInfo metaData(){
 
-        Contact contact = new Contact("Maciej Kraskiewicz", "https://github.com/tfors",
+        Contact contact = new Contact("TforS Team", "https://github.com/mkraskiewicz/Collabothon-MVC",
                 "maciek.kraskiewicz@gmail.com");
 
-        return new ApiInfo("Learning Rest MVC", "My first Spring Rest-MVC application", "1.0",
+        return new ApiInfo("Collabothon TforS", "Tinder for Services", "1.0",
                 "Terms of service: None", contact,
                 "Apache Licence Version 2.0", "https://www.apache.org/licenses/LICENSE-2.0",
                 new ArrayList());

@@ -9,6 +9,7 @@ public interface VendorService {
 
     Vendor getVendorById(Long id);
     Vendor createNewVendor(Vendor vendorDTO);
+    void informUser(Long id);
 
 
 }

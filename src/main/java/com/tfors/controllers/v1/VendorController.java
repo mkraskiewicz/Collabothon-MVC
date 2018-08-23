@@ -1,6 +1,7 @@
 package com.tfors.controllers.v1;
 
 
+import com.tfors.domain.ContactDTO;
 import com.tfors.domain.Customer;
 import com.tfors.domain.Vendor;
 import com.tfors.services.CustomerService;
@@ -50,6 +51,16 @@ public class VendorController {
                 HttpStatus.CREATED);
     }
 
+    @ApiOperation(value = "Inform a customer that you are interested in making a deal with him")
+    @PostMapping("/inform")
+    public ResponseEntity<Vendor> informCustomer(@RequestBody ContactDTO contactDTO){
+        Customer customer = customerService.getCustomerById(contactDTO.getCustomerId());
+        if (customer.getVendor()!= null && customer.getVendor().getId().equals(contactDTO.getCustomerId())){
+            vendorService.informUser(contactDTO.getCustomerId());
+        }
+
+        return new ResponseEntity<Vendor>(HttpStatus.OK);
+    }
 
     @ApiOperation(value = "Returns all customers which are interested in particular Vendor")
     @GetMapping("{id}/interested")

@@ -16,8 +16,11 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
+    private Boolean vendorInterested;
 
     @ManyToOne
     private Vendor vendor;
+
+
 
 }
