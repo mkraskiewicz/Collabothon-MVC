@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+
 
 @Slf4j
 @Component
@@ -60,6 +62,7 @@ public class Bootstrap implements CommandLineRunner {
         barber.setPosition("Barber");
         barber.setDescription("Best Barber in Berlin");
         barber.setStars(10);
+
 
         vendorRepository.save(barber);
 

@@ -4,10 +4,7 @@ package com.tfors.domain;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @Data
@@ -19,4 +16,8 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
+
+    @ManyToOne
+    private Vendor vendor;
+
 }
