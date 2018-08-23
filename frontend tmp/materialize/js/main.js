@@ -1,15 +1,22 @@
+<<<<<<< Updated upstream
+=======
+var firstName;
+var lastName;
+var vendor;
+var counter = 1;
+>>>>>>> Stashed changes
 
 function load(url) {
     $.ajax({
         type: "GET",
-        data: { get_param: 'value' },
+        data: {get_param: 'value'},
         dataType: 'json',
-        url: 'http://localhost:8080/api/v1/vendors/1',
+        url: url + counter,
         success: function (data) {
-            console.log("working")
-        },
-        error: function () {
-            console.log("error")
+            firstName = data.firstName;
+            lastName = data.lastName;
+            vendor = data.vendor;
+            counter++;
         }
     })
 }
