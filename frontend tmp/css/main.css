@@ -1,0 +1,100 @@
+#phoneScreen{
+  background-color: white;
+}
+body{
+    background-color: grey;
+      color: white;
+      /*/*font-family:"Roboto";*/
+      font-family: 'Roboto', sans-serif;
+}
+.phoneScreenDimention{
+    height:1920px;
+    min-height:1920px;
+    max-height:1920px;
+    width:1080px;
+    min-width:1080px;
+    max-width:1080px;
+    padding: 0px;
+}
+.mainPhotoContainer{
+    width: auto;
+    /*height:1250px;
+    min-height:1250px;
+    max-height:1250px;
+    /*width:1080px;*/
+    /*min-width:1080px;
+    max-width:1080px;*/
+}
+
+.aboutSection{
+    color: #47525E;
+}
+.aboutSectionBG{
+    background-color: #EFF2F7;
+    height: 600px;
+}
+
+.mainPhotoContainer img{
+    max-height: 100%;
+    max-width: 100%;
+}
+#name{
+    font-size:70px;
+    font-weight: bold;
+    /*color: #47525E;*/
+}
+#role{
+    font-size: 45px;
+    font-weight: thin;
+    color: #697480;
+}
+#aboutText{
+    margin-top: 30px;
+    font-size: 40px;
+}
+#stars{
+    color: orange;
+}
+.star{
+    font-size:60px;
+}
+#scoreCount{
+    font-size:40px;
+}
+#doBuisnessButton{
+    background-color: green;
+
+}
+
+#noThanksButton, #doBuisnessButton{
+   width: 230px;
+   height: 230px;
+   
+}
+.buttonsSection{
+    /*position: absolute;*/
+    margin-top: -85px;
+}
+.androidBar{
+    height: 90px;
+    margin-top: 440px;
+    background-color: black;
+    width: auto;
+   
+
+}
+.androidIcon{
+ font-size: 75px;
+}
+
+
+/************************** Service provider part ******************************/
+
+.collapsible-header{
+    color: #47525E;
+    font-size: 65px;
+}
+.collapsible-body{
+     color: #47525E;
+}
+
