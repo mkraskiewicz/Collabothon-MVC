@@ -1,10 +1,7 @@
-<<<<<<< Updated upstream
-=======
 var firstName;
 var lastName;
 var vendor;
 var counter = 1;
->>>>>>> Stashed changes
 
 function load(url) {
     $.ajax({
