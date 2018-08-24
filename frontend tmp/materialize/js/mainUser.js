@@ -4,17 +4,18 @@ function load(url) {
         type: "GET",
         data: { get_param: 'value' },
         dataType: 'json',
-        url: 'http://localhost:8080/api/v1/vendors/1/interested',
+        url: 'http://localhost:8080/api/v1/vendors/1',
         success: function (data) {
-
-                console.log(data)
+            if(data.vendorInterested){
+                console.log("Vendor " + data.vendor.id + " wants to deal with me!")
+            }else
+            console.log("No one is going to make a deal with me.")
         },
         error: function () {
             console.log("error")
         }
     })
 }
-
 $(function(){
     setInterval(load, 5000);
 });

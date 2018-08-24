@@ -66,11 +66,15 @@ public class VendorController {
     @GetMapping("{id}/interested")
     public ResponseEntity<List<Customer>> getInterestedCustomers(@PathVariable("id") Long id){
 
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.add("Access-Control-Allow-Methods", "POST, GET"); // also added header to allow POST, GET method to be available
+        responseHeaders.add("Access-Control-Allow-Origin", "*"); // also added header to allow cross domain request for any domain
+
         List<Customer> customerList = customerService.getAllCustomers().stream()
                 .filter(c -> c.getVendor() != null)
                 .filter(customer -> customer.getVendor().getId().equals(id)).collect(Collectors.toList());
 
-        return new ResponseEntity<List<Customer>>(customerList,
+        return new ResponseEntity<List<Customer>>(customerList,responseHeaders,
                 HttpStatus.OK);
 
     }
