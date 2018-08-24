@@ -113,7 +113,7 @@ function fillUserViewData() {
     //swap photo
     var buisnessPhoto = document.getElementById("buisnessPhoto");
     buisnessPhoto.innerHTML = "";
-    $( "#buisnessPhoto" ).append( "<img id='buisnessPhoto' class='responsive-img' src='images/bman3.jpg' alt='Italian Trulli'>" );
+    $( "#buisnessPhoto" ).append( "<img id='buisnessPhoto' class='responsive-img' src='images/Sebastian.jpeg' alt='Italian Trulli'>" );
     
 
 }
