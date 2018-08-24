@@ -1,4 +1,5 @@
 
+
 function load(url) {
     $.ajax({
         type: "GET",
@@ -16,6 +17,8 @@ function load(url) {
         }
     })
 }
+
+
 $(function(){
     setInterval(load, 5000);
 });
@@ -58,12 +61,6 @@ function callClient() {
 }
 
 
-
-
-
-
-
-
 // USER ONCLICKS
 
 function onDoBusinessButtonClick() {
@@ -72,7 +69,7 @@ function onDoBusinessButtonClick() {
 
 }
 function onRejectServiceProviderClick() {
-
+    fillUserViewData();
     //get with another serviceProvider
 }
 function onAnswerTheCallClick() {
@@ -87,3 +84,36 @@ function onCallCustomerClick() {
 
 
 // SERVICE PROVIDER ONCLICK
+
+
+
+
+
+//html templates
+function fillUserViewData() {
+    //name
+    var serviceProvicerName = document.getElementById("name");
+    serviceProvicerName.innerHTML = "";
+    serviceProvicerName.innerHTML = "Sebastian Kacuk"; //data from server here
+
+    //description
+    var aboutText = document.getElementById("aboutText");
+    aboutText.innerHTML = "";
+    aboutText.innerHTML = "I am an banking advisor specialized in financial trading areas with 17 years of experience. I always stars working right away,to provide the best customer experience"; //data from server here
+
+    //description
+    var scoreCount = document.getElementById("scoreCount");
+    scoreCount.innerHTML = "";
+    scoreCount.innerHTML = "(81)"; //data from server here
+
+    $( "#stars" ).append( " <i class='star material-icons'>star</i>" );
+    $( "#stars" ).append( " <i class='star material-icons'>star</i>" );
+    $( "#stars" ).append( " <i class='star material-icons'>star</i>" );
+
+    //swap photo
+    var buisnessPhoto = document.getElementById("buisnessPhoto");
+    buisnessPhoto.innerHTML = "";
+    $( "#buisnessPhoto" ).append( "<img id='buisnessPhoto' class='responsive-img' src='images/bman3.jpg' alt='Italian Trulli'>" );
+    
+
+}
