@@ -190,4 +190,7 @@ font-size: 80px !important;
 #noThanksButton.btn-large i {
     line-height: 225px !important;
 }
+.ButtonSectionForServiceProvider{
+    margin-top: 450px;
+}
 
