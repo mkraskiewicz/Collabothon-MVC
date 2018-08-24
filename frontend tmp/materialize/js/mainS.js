@@ -94,7 +94,7 @@ function fillUserViewData() {
     //name
     var serviceProvicerName = document.getElementById("name");
     serviceProvicerName.innerHTML = "";
-    serviceProvicerName.innerHTML = "Sebastian Kacuk"; //data from server here
+    serviceProvicerName.innerHTML = "Sebastian Kauck"; //data from server here
 
     //description
     var aboutText = document.getElementById("aboutText");
