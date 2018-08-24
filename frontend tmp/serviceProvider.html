@@ -22,7 +22,7 @@
                 <i class="material-icons right">send</i>
             </button>
 
-            <div class="col l6 m6 s6 offset-l1 offset-m1  offset-s1 phoneScreenDimention" id="phoneScreen">
+            <div class="col l6 m6 s6 offset-l1 offset-m1 offset-s1 phoneScreenDimention" id="phoneScreen">
 
                 <!--MODAL-->
 
@@ -39,52 +39,78 @@
                     </div>
 
                     <div class="phoneCallBar">
-                        <div><a id="closeModal" class="btn-floating btn-large waves-effect modal-close waves-light red"  ><i class=" phoneicons material-icons">close</i></a></div>
-                        <div><a id="callCustommer" class="btn-floating btn-large waves-effect  modal-close waves-light green"><i class=" phoneicons material-icons">local_phone</i></a></div>
+                        <div><a id="closeModal" class="btn-floating btn-large waves-effect modal-close modal-close waves-light red"><i class=" phoneicons material-icons">close</i></a></div>
+                        <div>
+                            <a id="callCustommer" class="btn-floating btn-large waves-effect  modal-close waves-light green " onclick="callClient()"><i class=" phoneicons material-icons">local_phone</i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!--!MODAL-->
 
-                <div class="mainPhotoContainer center-align ">
-                    <img class="responsive-img" src="images/bman.jpg" alt="Italian Trulli">
-                </div>
-                <div class="row aboutSectionBGCustomerProvider">
-                    <div class="aboutSection">
-                        <div class="lineSection">
-                            <div class="valign-wrapper">
-                                <div id="name" class="col l7 s7 m7">Jackob Johnson</div>
-                                <div id="stars" class="col l4 s4 m4">
-                                    <i class="star material-icons">star</i>
-                                    <i class="star material-icons">star</i>
-                                    <i class="star material-icons">star</i>
-                                    <i class="star material-icons">star</i>
-                                    <i class="star material-icons">star</i>
+
+                <!--PHONE CALL VIEW-->
+                <div id="phoneCallViewServiceProvider">
+                    <div class="row ">
+                        <div class="dummyCall">
+                            <div class="mainPhotoContainer center-align ">
+                                <!--<img class="responsive-img" src="images/bman.jpg" alt="Italian Trulli">-->
+                                <i id="dummyFace" class="star material-icons">face</i>
+                            </div>
+                            <div class="endCallButtonSeparator">
+                                <div class="hangOut center-align" onclick="endCallServiceProvider()">
+                                    <a id="endCallButton" class=" btn-floating btn-large waves-effect waves-light red"><i class=" addButtonFont material-icons" onclick="endPhoneCallWithClient()">call_end</i></a>
                                 </div>
-                                <div id="scoreCount" class="col l1 s1 m1">(34)</div>
                             </div>
                         </div>
 
-                        <div id="role" class="col l12 s12 m12">Trading Banking Advisor</div>
-                        <div id="aboutText" class="col l12 s12 m12">
-                            I am an banking advisor specialized in financial trading areas with 7 years of experience. I always stars working right away,
-                            to provide the best customer experience
-                        </div>
-                        <div class="right-align"><a id="editButton" class=" btn-floating btn-large waves-effect waves-light grey"><i class=" addButtonFont material-icons">mode_edit</i></a>
-                        </div>
                     </div>
-
                 </div>
+                <!--PHONE CALL VIEW-->
+
+                <!--account VIEW-->
+                <div id="swippingView">
+                    <div class="mainPhotoContainer center-align ">
+                        <img class="responsive-img" src="images/bman.jpg" alt="Italian Trulli">
+                    </div>
+                    <div class="row aboutSectionBGCustomerProvider">
+                        <div class="aboutSection">
+                            <div class="lineSection">
+                                <div class="valign-wrapper">
+                                    <div id="name" class="col l7 s7 m7">Jackob Johnson</div>
+                                    <div id="stars" class="col l4 s4 m4">
+                                        <i class="star material-icons">star</i>
+                                        <i class="star material-icons">star</i>
+                                        <i class="star material-icons">star</i>
+                                        <i class="star material-icons">star</i>
+                                        <i class="star material-icons">star</i>
+                                    </div>
+                                    <div id="scoreCount" class="col l1 s1 m1">(34)</div>
+                                </div>
+                            </div>
+
+                            <div id="role" class="col l12 s12 m12">Trading Banking Advisor</div>
+                            <div id="aboutText" class="col l12 s12 m12">
+                                I am an banking advisor specialized in financial trading areas with 7 years of experience. I always stars working right away,
+                                to provide the best customer experience
+                            </div>
+                            <div class="right-align"><a id="editButton" class=" btn-floating btn-large waves-effect waves-light grey"><i class=" addButtonFont material-icons">mode_edit</i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--account VIEW-->
                 <!--dummy button-->
                 <button data-target="modal1" class="btn modal-trigger">Modal</button>
 
-                <div class="androidBar">
+                <!--<div class="androidBar">
                     <div class="row valign-wrapper">
                         <div class="col l3 m3 s3 offset-l1 offset-m1  offset-s1"><i class="androidIcon star material-icons">crop_square</i></div>
                         <div class="col l3 m3 s3"><i class="androidIcon star material-icons">panorama_fish_eye</i></div>
                         <div class="col l2 m2 s2"><i class="androidIcon star material-icons">arrow_back</i></div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </div>

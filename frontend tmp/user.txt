@@ -69,12 +69,12 @@
                     <div class="row ">
                         <div class="dummyCall">
                             <div class="mainPhotoContainer center-align ">
-                                <img class="responsive-img" src="images/bman.jpg" alt="Italian Trulli">
-                                <!--<i id="dummyFace" class="star material-icons">face</i>-->
+                                <!--<img class="responsive-img" src="images/bman.jpg" alt="Italian Trulli">-->
+                                <i id="dummyFace" class="star material-icons">face</i>
                             </div>
                             <div class="endCallButtonSeparator">
                                 <div class="hangOut center-align" onclick="endCall()">
-                                    <a id="endCallButton" class=" btn-floating btn-large waves-effect waves-light red"><i class=" addButtonFont material-icons" >call_end</i></a>
+                                    <a id="endCallButton" class=" btn-floating btn-large waves-effect waves-light red"><i class=" addButtonFont material-icons" onclick="endPhoneCall()">call_end</i></a>
                                 </div>
                             </div>
                         </div>
@@ -120,9 +120,9 @@
                     <button data-target="modal2" class="btn modal-trigger">Modal</button>
 
                     <div class="buttonsSection">
-                        <div class="col l2"> <a id="noThanksButton" class="btn-floating btn-large waves-effect waves-light red"><i id="noThanksButtonClose"class="material-icons">close</i></a></div>
+                        <div class="col l2"> <a id="noThanksButton" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a></div>
                         <div class="col l3 offset-l7">
-                            <a id="doBuisnessButton" class="btn-floating btn-large waves-effect waves-light"><img class="responsive-img" src="images/handshake.png" /></a>
+                            <a id="doBuisnessButton" class="btn-floating btn-large waves-effect waves-light"><img class="responsive-img" src="images/handshake.png" /> add</a>
                         </div>
                     </div>
                 </div>

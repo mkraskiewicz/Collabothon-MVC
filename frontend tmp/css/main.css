@@ -109,6 +109,16 @@ body{
 font-size: 80px !important;
 }
 
+#endCallButton{
+   width: 130px;
+   height: 130px;
+   margin:40px;
+}
+
+
+#endCallButton.btn-large i {
+    line-height: 125px;
+}
 #editButton.btn-large i {
     line-height: 125px;
 }
@@ -130,7 +140,7 @@ font-size: 80px !important;
    margin-top: 60px;
    height: 150px;
    margin-left:80px;
-   margin-right: 270px;
+   margin-right: 200px;
    float: left;
 }
 #callCustommer{
@@ -138,7 +148,7 @@ font-size: 80px !important;
    height: 150px;
    margin-top: 60px;
    margin-left:60px; 
-   margin-right: 60px;
+   margin-right: 0px;
    clear: both;
 }
 #callCustommer.btn-large i {
@@ -161,7 +171,23 @@ font-size: 80px !important;
 #phoneCallView {
    display: none;
 }
-.dummyCall{
-     height: 450px;
-     background-color: yellow;
+#phoneCallViewServiceProvider{
+     display: none;
 }
+.dummyCall{
+     height: 1900px;
+     background-color: #303030;
+}
+.endCallButtonSeparator{
+    margin-top: 300px;
+}
+#dummyFace{
+     font-size: 755px;
+}
+#noThanksButtonClose{
+    font-size: 180px !important;
+}
+#noThanksButton.btn-large i {
+    line-height: 225px !important;
+}
+
